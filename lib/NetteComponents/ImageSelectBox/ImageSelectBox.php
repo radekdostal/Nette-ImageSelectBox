@@ -4,7 +4,7 @@
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
  * @example   http://addons.nette.org/imageselectbox
- * @version   $Id: ImageSelectBox.php,v 1.1.1 2013/03/20 15:10:00 dostal Exp $
+ * @version   $Id: ImageSelectBox.php,v 1.1.1 2013/03/20 15:54:00 dostal Exp $
  * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
  * @copyright Copyright (c) 2011 - 2013 Radek Dostál
  * @license   GNU Lesser General Public License

@@ -3,10 +3,10 @@
  * ImageSelectBox Input Control
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
- * @example   http://addons.nette.org/imageselectbox
- * @version   $Id: ImageSelectBox.php,v 1.1.1 2013/03/20 15:58:00 dostal Exp $
+ * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
+ * @version   $Id: ImageSelectBox.php,v 1.1.1 2014/04/15 10:49:00 dostal Exp $
  * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
- * @copyright Copyright (c) 2011 - 2013 Radek Dostál
+ * @copyright Copyright (c) 2011 - 2014 Radek Dostál
  * @license   GNU Lesser General Public License
  * @link      http://www.radekdostal.cz
  */
@@ -47,6 +47,7 @@ class ImageSelectBox extends SelectBox
    *
    * @access public
    * @return \Nette\Utils\Html
+   * @since 1.0.0
    */
   public function getControl()
   {

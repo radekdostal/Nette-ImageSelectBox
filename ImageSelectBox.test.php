@@ -3,10 +3,10 @@
  * RadekDostal\NetteComponents\ImageSelectBox with jQuery and jQuery msDropDown plugin example
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
- * @example   http://addons.nette.org/imageselectbox
- * @version   $Id: ImageSelectBox.php,v 1.1.1 2013/03/20 14:59:00 dostal Exp $
+ * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
+ * @version   $Id: ImageSelectBox.php,v 1.1.1 2014/04/15 10:47:00 dostal Exp $
  * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
- * @copyright Copyright (c) 2011 - 2013 Radek Dostál
+ * @copyright Copyright (c) 2011 - 2014 Radek Dostál
  * @license   GNU Lesser General Public License
  * @link      http://www.radekdostal.cz
  */
@@ -47,15 +47,12 @@ $form->addImageSelectBox('item', 'Item:', $items)
 
 $form->addSubmit('submit', 'Send');
 
-if ($form->isSubmitted())
+if ($form->isSuccess())
 {
-  if ($form->isValid())
-  {
-    echo '<h2>Form was submitted and successfully validated</h2>';
+  echo '<h2>Form was submitted and successfully validated</h2>';
 
-    dump($form->values);
-    exit;
-  }
+  dump($form->values);
+  exit;
 }
 ?>
 <!DOCTYPE html>

@@ -4,7 +4,7 @@
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
  * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
- * @version   $Id: ImageSelectBox.php,v 1.1.1 2014/04/15 10:51:00 dostal Exp $
+ * @version   $Id: ImageSelectBox.php,v 1.1.1 2014/04/27 10:31:00 dostal Exp $
  * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
  * @copyright Copyright (c) 2011 - 2014 Radek Dostál
  * @license   GNU Lesser General Public License
@@ -15,7 +15,6 @@ use Nette\Diagnostics\Debugger;
 use Nette\Forms\Form;
 
 require_once('vendor/autoload.php');
-require_once('lib/NetteComponents/ImageSelectBox/ImageSelectBox.php');
 
 Debugger::$strictMode = TRUE;
 Debugger::enable();

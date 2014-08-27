@@ -1,5 +1,4 @@
-﻿ImageSelectBox
-==============
+﻿# ImageSelectBox for Nette Framework
 
 ImageSelectBox Control for Nette Framework
 
@@ -10,19 +9,16 @@ ImageSelectBox Control for Nette Framework
 
 This add-on creates select box with images.
 
-Requirements
-------------
+## Requirements
 
-- **PHP** 5.3
-- **Nette Framework** 2.0 or later
-- **jQuery** 1.9.1
-- **msDropDown** 3.3
+- **[PHP](http://php.net)** 5.3 or later
+- **[Nette Framework](http://nette.org)** 2.0 or later
+- **[jQuery](http://jquery.com)** 1.9.1 or later
+- **[msDropDown](http://www.marghoobsuleman.com/jquery-image-dropdown)** 3.5.2
 
-GNU Lesser General Public License
----------------------------------
+## GNU Lesser General Public License
 
 LGPL licenses are very very long, so instead of including them here we offer you URLs with full text:
 
-- [LGPL version 2.0](http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html)
 - [LGPL version 2.1](http://www.gnu.org/licenses/lgpl-2.1.html)
 - [LGPL version 3](http://www.gnu.org/licenses/lgpl-3.0.html)

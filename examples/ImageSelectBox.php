@@ -4,7 +4,6 @@
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
  * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
- * @version   $Id: ImageSelectBox.php,v 1.1.1 2014/04/27 10:31:00 dostal Exp $
  * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
  * @copyright Copyright (c) 2011 - 2014 Radek Dostál
  * @license   GNU Lesser General Public License
@@ -14,7 +13,7 @@
 use Nette\Diagnostics\Debugger;
 use Nette\Forms\Form;
 
-require_once('vendor/autoload.php');
+require '../vendor/autoload.php';
 
 Debugger::$strictMode = TRUE;
 Debugger::enable();
@@ -42,7 +41,7 @@ $form = new Form();
 
 $form->addImageSelectBox('item', 'Item:', $items)
   ->setPrompt('— select any item —')
-  ->addRule($form::FILLED, 'Please select any item.');
+  ->setRequired();
 
 $form->addSubmit('submit', 'Send');
 
@@ -50,7 +49,7 @@ if ($form->isSuccess())
 {
   echo '<h2>Form was submitted and successfully validated</h2>';
 
-  dump($form->values);
+  dump($form->getValues());
   exit;
 }
 ?>
@@ -61,9 +60,8 @@ if ($form->isSuccess())
   <meta name="author" content="Radek Dostál">
   <title>RadekDostal\NetteComponents\ImageSelectBox with jQuery and jQuery msDropDown plugin example</title>
   <link rel="stylesheet" type="text/css" href="js/jquery/plugins/msdropdown/css/dd.css">
-  <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="js/jquery/plugins/msdropdown/js/jquery.dd.min.js"></script>
-  <script type="text/javascript" src="js/nette/netteForms.js"></script>
   <script type="text/javascript">
     <!-- <![CDATA[
     $(document).ready(function()
@@ -72,6 +70,7 @@ if ($form->isSuccess())
       {
         $('.imageselectbox').msDropDown(
         {
+          roundedCorner: false,
           visibleRows: 5
         });
       }

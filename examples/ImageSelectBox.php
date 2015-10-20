@@ -4,14 +4,14 @@
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
  * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
- * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
- * @copyright Copyright (c) 2011 - 2014 Radek Dostál
+ * @author    Ing. Radek Dostál, Ph.D. <radek.dostal@gmail.com>
+ * @copyright Copyright (c) 2011 - 2015 Radek Dostál
  * @license   GNU Lesser General Public License
  * @link      http://www.radekdostal.cz
  */
 
-use Nette\Diagnostics\Debugger;
 use Nette\Forms\Form;
+use Tracy\Debugger;
 
 require '../vendor/autoload.php';
 

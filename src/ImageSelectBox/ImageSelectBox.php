@@ -4,7 +4,7 @@
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
  * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
- * @author    Ing. Radek Dostál <radek.dostal@gmail.com>
+ * @author    Ing. Radek Dostál, Ph.D. <radek.dostal@gmail.com>
  * @copyright Copyright (c) 2011 - 2015 Radek Dostál
  * @license   GNU Lesser General Public License
  * @link      http://www.radekdostal.cz
@@ -12,6 +12,7 @@
 
 namespace RadekDostal\NetteComponents;
 
+use Nette\Forms\Container;
 use Nette\Forms\Controls\SelectBox;
 use Nette\Utils\Arrays;
 use Nette\Utils\Html;
@@ -65,6 +66,19 @@ class ImageSelectBox extends SelectBox
     $control->class = 'imageselectbox';
 
     return $control;
+  }
+
+  /**
+   * Registers this control
+   *
+   * @return self
+   */
+  public static function register()
+  {
+    Container::extensionMethod('addImageSelectBox', function($container, $name, $label = NULL, array $items = NULL, $size = NULL)
+    {
+      return $container[$name] = new ImageSelectBox($label, $items, $size);
+    });
   }
 
   /**

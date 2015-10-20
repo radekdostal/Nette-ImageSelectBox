@@ -18,10 +18,7 @@ require '../vendor/autoload.php';
 Debugger::$strictMode = TRUE;
 Debugger::enable();
 
-Form::extensionMethod('addImageSelectBox', function(Form $_this, $name, $label = NULL, array $items = NULL, $size = NULL)
-{
-  return $_this[$name] = new RadekDostal\NetteComponents\ImageSelectBox($label, $items, $size);
-});
+RadekDostal\NetteComponents\ImageSelectBox::register();
 
 $items = array(
   'calendar' => array('Calendar', 'img/icon_calendar.gif'),

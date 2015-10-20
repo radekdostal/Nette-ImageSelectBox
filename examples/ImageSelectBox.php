@@ -60,7 +60,7 @@ if ($form->isSuccess())
   <meta name="author" content="Radek Dostál">
   <title>RadekDostal\NetteComponents\ImageSelectBox with jQuery and jQuery msDropDown plugin example</title>
   <link rel="stylesheet" type="text/css" href="js/jquery/plugins/msdropdown/css/dd.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="js/jquery/plugins/msdropdown/js/jquery.dd.min.js"></script>
   <script type="text/javascript">
     <!-- <![CDATA[

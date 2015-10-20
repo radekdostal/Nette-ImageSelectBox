@@ -30,16 +30,15 @@ class ImageSelectBox extends SelectBox
    *
    * @param string $label label
    * @param array $items items
-   * @param int $size number of rows that will be visible
    */
-  public function __construct($label = NULL, array $items = NULL, $size = NULL)
+  public function __construct($label = NULL, array $items = NULL)
   {
     $imageItems = array();
 
     if ($items !== NULL)
       $imageItems = $this->getImageItems($items);
 
-    parent::__construct($label, $imageItems, $size);
+    parent::__construct($label, $imageItems);
   }
 
   /**
@@ -75,9 +74,9 @@ class ImageSelectBox extends SelectBox
    */
   public static function register()
   {
-    Container::extensionMethod('addImageSelectBox', function($container, $name, $label = NULL, array $items = NULL, $size = NULL)
+    Container::extensionMethod('addImageSelectBox', function($container, $name, $label = NULL, array $items = NULL)
     {
-      return $container[$name] = new ImageSelectBox($label, $items, $size);
+      return $container[$name] = new ImageSelectBox($label, $items);
     });
   }
 

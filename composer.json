@@ -19,6 +19,7 @@
     "nette/utils": "^2.2.0"
   },
   "require-dev": {
+    "nette/tester": "1.6.0",
     "tracy/tracy": "^2.2.0"
   },
   "autoload": {

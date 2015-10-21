@@ -1,3 +1,6 @@
-.idea
+/.idea
+/_clean.sh
+/tests/tmp/*
+
 vendor
 composer.lock

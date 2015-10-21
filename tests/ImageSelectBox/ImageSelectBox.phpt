@@ -45,7 +45,7 @@ test(function() use ($items)
 });
 
 // Empty select
-test(function() use ($items)
+test(function()
 {
   $_POST = ['item' => 'calendar'];
 

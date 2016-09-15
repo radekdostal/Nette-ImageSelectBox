@@ -3,9 +3,9 @@
  * RadekDostal\NetteComponents\ImageSelectBox with jQuery and jQuery msDropDown plugin example
  *
  * @package   RadekDostal\NetteComponents\ImageSelectBox
- * @example   http://addons.nette.org/radekdostal/nette-imageselectbox
+ * @example   https://componette.com/radekdostal/nette-imageselectbox/
  * @author    Ing. Radek Dostál, Ph.D. <radek.dostal@gmail.com>
- * @copyright Copyright (c) 2011 - 2015 Radek Dostál
+ * @copyright Copyright (c) 2011 - 2016 Radek Dostál
  * @license   GNU Lesser General Public License
  * @link      http://www.radekdostal.cz
  */
